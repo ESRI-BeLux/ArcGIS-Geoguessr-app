@@ -1,9 +1,0 @@
-System.register(["jimu-core","jimu-ui/advanced/setting-components"],(function(e,t){var s={},i={};return{setters:[function(e){s.React=e.React,s.css=e.css,s.jsx=e.jsx},function(e){i.MapWidgetSelector=e.MapWidgetSelector,i.SettingRow=e.SettingRow,i.SettingSection=e.SettingSection}],execute:function(){e((()=>{var e={9244:e=>{"use strict";e.exports=s},9298:e=>{"use strict";e.exports=i}},t={};function n(s){var i=t[s];if(void 0!==i)return i.exports;var o=t[s]={exports:{}};return e[s](o,o.exports,n),o.exports}n.d=(e,t)=>{for(var s in t)n.o(t,s)&&!n.o(e,s)&&Object.defineProperty(e,s,{enumerable:!0,get:t[s]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.p="";var o={};return n.p=window.jimuConfig.baseUrl,(()=>{"use strict";n.r(o),n.d(o,{__set_webpack_public_path__:()=>r,default:()=>i});var e=n(9244),t=n(9298);const s="Select Map Widget";class i extends e.React.PureComponent{constructor(){super(...arguments),this.onMapWidgetSelected=e=>{this.props.onSettingChange({id:this.props.id,useMapWidgetIds:e})}}render(){const i=e.css`
-      .widget-setting-direct-print-map-panel {
-        .checkbox-row {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 8px;
-        }
-      }
-    `;return(0,e.jsx)("div",{css:i},(0,e.jsx)("div",{className:"widget-setting-direct-print-map-panel"},(0,e.jsx)(t.SettingSection,{className:"map-selector-section",title:this.props.intl.formatMessage({id:"mapWidgetLabel",defaultMessage:s})},(0,e.jsx)(t.SettingRow,null,(0,e.jsx)(t.MapWidgetSelector,{onSelect:this.onMapWidgetSelected,useMapWidgetIds:this.props.useMapWidgetIds})))))}}function r(e){n.p=e}})(),o})())}}}));
